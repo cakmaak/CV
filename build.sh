@@ -11,4 +11,7 @@ export PYTHONPATH=$PYTHONPATH:$(pwd)
 python cvsite/manage.py collectstatic --no-input
 
 # Run migrations
-python cvsite/manage.py migrate 
+python cvsite/manage.py migrate
+
+# Create a symbolic link to the inner cvsite directory
+ln -sf cvsite/cvsite/* cvsite/ 
