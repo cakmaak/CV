@@ -3,13 +3,16 @@ services:
     name: cvsite
     env: python
     buildCommand: |
+      cd cv-site
       pip install -r requirements.txt
-      python cvsite/manage.py collectstatic --no-input
-    startCommand: cd cvsite && PYTHONPATH=$PYTHONPATH:$(pwd) gunicorn cvsite.wsgi:application --bind 0.0.0.0:$PORT
+      python manage.py collectstatic --no-input
+    startCommand: |
+      cd cv-site
+      gunicorn cvsite.wsgi:application --bind 0.0.0.0:$PORT
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.0
       - key: DJANGO_SETTINGS_MODULE
         value: cvsite.settings
       - key: DEBUG
-        value: "False" 
+        value: "False"
