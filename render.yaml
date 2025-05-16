@@ -3,7 +3,7 @@ services:
     name: cvsite
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn wsgi:application
+    startCommand: cd cvsite && gunicorn cvsite.wsgi:application
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.0 
