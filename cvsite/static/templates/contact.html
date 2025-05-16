@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+  <link href="{% static 'css/stokman.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}
+  
+{% endblock %}
+
+
+
+
+{% block content %}
+{% include "navbar.html" %}
+
+<section class="contact-section">
+  <h2>İletişim</h2>
+  <p>Adreslerim ve sosyal medya hesaplarım:</p>
+  <ul class="contact-list">
+    <li>
+      <a href="https://github.com/cakmaak" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="icon">
+        GitHub /cakmaak
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/caakkmak/" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="icon">
+        Instagram /caakkmak
+      </a>
+    </li>
+  </ul>
+</section>
+
+<style>
+
+    .contact-section {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+.contact-section h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin: 1rem 0;
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+  color: #e4405f; /* Instagram pinkish */
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  filter: grayscale(30%);
+  transition: filter 0.3s ease;
+}
+
+.contact-list a:hover .icon {
+  filter: none;
+}
+
+
+
+</style>
+
+
+
+
+{% endblock %}

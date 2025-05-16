@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+  <link href="{% static 'css/stokman.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}
+  
+{% endblock %}
+
+
+
+
+{% block content %}
+{% include "navbar.html" %}
+<div style="display: flex; flex-direction: row; gap: 20px; justify-content: flex-start; align-items: center; margin-left:20px">
+    <img src="{% static 'images/qr4.png' %}" width="280px" alt="Proje Açıklama Alanı" />
+    <img src="{% static 'images/qr5.png' %}" width="280px" alt="Proje Açıklama Alanı" />
+    <img src="{% static 'images/qr1.png' %}" width="280px" alt="Proje Açıklama Alanı" />
+    <img src="{% static 'images/qr2.png' %}" width="280px" alt="Proje Açıklama Alanı" />
+    <img src="{% static 'images/qr3.png' %}" width="180px" alt="Proje Açıklama Alanı" />
+    
+    
+   
+    
+</div>
+
+
+
+<div class="container">
+
+<br>
+
+<h1>QR Menü Projesi</h1>
+
+<p>
+
+QR menü projemde, restoranlar ve işletmeler için kullanıcı dostu bir çözüm geliştirdim. Projemde öncelikle <span class="highlight">PHP</span> kullanmayı tercih ettim, çünkü PHP'nin güçlü bir sunucu tarafı programlama dili olması, veri yönetimi ve işlem kolaylığı sağladı. İlk aşamada, restoranların menülerini dijital hale getirmek için basit bir kullanıcı arayüzü tasarladım ve bu arayüz üzerinde kullanıcıların ürünleri kolayca ekleyip çıkarabilmesi sağlandı.
+
+</p>
+
+<p>
+
+Projenin dinamik yapı kazanması için, <span class="highlight">JavaScript</span> ile interaktif özellikler ekledim. Kullanıcılar, QR kodlarını kullanarak menüye erişebiliyor ve bu sayede sipariş işlemlerini hızlı bir şekilde gerçekleştirebiliyorlar. JavaScript ile birlikte web sayfasının performansını artırarak kullanıcı deneyimini iyileştirdim.
+
+</p>
+
+<p>
+
+Ayrıca, ürünleri ve menü öğelerini yönetmek için kapsamlı bir <span class="highlight">yönetim paneli</span> geliştirdim. Bu panel üzerinden restaurant sahipleri, ürünleri kolay bir şekilde ekleyip çıkarabiliyor, menülerini diledikleri gibi güncelleyebiliyorlar. PHP'nin veri işleme yetenekleri sayesinde, yönetim paneli oldukça işlevsel hale geldi.
+
+</p>
+
+
+
+<p>
+
+Bu proje, restoranlar için modern ve etkili bir QR menü çözümü sundu ve işletmelerin müşteri deneyimini artırmalarına yardımcı oldu.
+
+</p>
+
+</div>
+
+
+
+
+
+{% endblock %}

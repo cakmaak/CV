@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+  <link href="{% static 'css/stokman.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}
+  
+{% endblock %}
+
+
+
+
+{% block content %}
+{% include "navbar.html" %}
+<div style="display: flex; flex-direction: row; gap: 20px; justify-content: flex-start; align-items: center; margin-left:20px">
+    <img src="{% static 'images/TS/TS1.jpg' %}" width="280px" alt="Proje Açıklama Alanı" />
+    <img src="{% static 'images/TS/TS2.jpg' %}" width="280px" alt="Proje Açıklama Alanı" />
+    <img src="{% static 'images/TS/TS3.jpg' %}" width="280px" alt="Proje Açıklama Alanı" />
+    <img src="{% static 'images/TS/TS4.jpg' %}" width="280px" alt="Proje Açıklama Alanı" />
+    <img src="{% static 'images/TS/TS1.jpg' %}" width="180px" alt="Proje Açıklama Alanı" />
+    
+    
+   
+    
+</div>
+
+
+
+<div class="container">
+
+<br>
+
+<h1>ETKİNLİK TAKAS PLATFORMU</h1>
+
+<p>
+
+    Etkinlik Takas Platformu, kullanıcıların konser, tiyatro gibi etkinlikler için bilet satın alabildiği ve yönetebildiği bir web uygulamasıdır. Backend kısmı Django ile geliştirilmiş, RESTful API yapısı ile kullanıcı-bilet ilişkileri yönetilmiştir. Frontend tarafında ise HTML, CSS ve JavaScript kullanılmıştır. Projede, veri transferi için DTO yapıları, katmanlı mimari ve veri yönetimi için modern yazılım geliştirme teknikleri uygulanmıştır. Geliştirilen sistem, gerçek dünya senaryoları düşünülerek ölçeklenebilir ve yönetilebilir şekilde tasarlanmıştır.
+
+
+    🌐 <a href="https://etkinlik-takas.onrender.com" target="_blank">https://etkinlik-takas.onrender.com</a>
+    <span class="highlight">
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+{% endblock %}

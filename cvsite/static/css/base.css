@@ -1,0 +1,193 @@
+#myfoto {
+    width: 200px;  /* Genişlik */
+    height: 200px; /* Yükseklik (kare olması için 200x200 yap) */
+    border-radius: 50%; /* Yuvarlak yapmak için */
+    object-fit: cover; /* Resmin taşmasını önler, düzgün kırpma yapar */
+    border: 5px solid white; /* Beyaz çerçeve eklemek istersen */
+    background-color: #f8f8f8; /* Arka plan rengi */
+    object-position: 60% 30%;
+    margin-left: 370px;
+    margin-top: 20px;
+  
+   
+    
+    
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px; /* Daha büyük yapabilirsin */
+    font-weight: bold;
+}
+
+.nav-link {
+    font-family: 'Sacramento', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding-right: 100px;
+}
+#YZC{
+    font-family: 'Sacramento', cursive;
+    font-size: 36px;
+    color: black;
+    margin-right: 170px;
+    margin-left: 300px;
+}
+.navbar-nav .nav-link {
+    padding-left: 20px;
+
+}
+
+html, body {
+    height: 100%; /* Hem html hem de body için %100 yükseklik */
+    margin: 0; /* Boşluk bırakmasın */
+}
+
+body {
+    background-image: url("/static/images/background.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    min-height: 100%; 
+    margin: 0;
+    background-attachment: fixed; /* Arka planın sabit kalmasını sağlar */
+}
+.text-section {
+    padding-left: 650px;
+    margin-top: -180px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    
+}
+
+.Projeler h1{
+    padding-left: 320px;
+    padding-top: 25px;
+    font-family: 'Sacramento', cursive;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+#card1{
+    position: absolute;
+    left: 300px;
+    top: 160 px;
+    display: flex;
+    margin-top: 25px;
+    min-height: 50px;
+    
+   
+}
+#card2{
+
+        
+        position: absolute;
+        left: 600px;
+        top: 140 px;
+        display: flex;
+        margin-top: 25px;
+        min-height: 50px;
+}
+
+#card3{
+
+    
+    position: absolute;
+    left: 900px;
+    bottom: 10px;
+    display: flex;
+    margin-bottom: -6px;
+    min-height: 50px;
+   
+}
+
+
+#card4{
+
+    
+    position: absolute;
+    left: 1200px;
+    bottom: 10px;
+    display: flex;
+    margin-bottom: -6px;
+    min-height: 50px;
+   
+}
+
+.card.card-body{
+    background-color: black;
+}
+
+#card6{
+
+    position: absolute;
+    left: 600px;
+    bottom: 10px;
+    display: flex;
+    margin-bottom: -400px;
+    min-height: 50px;
+   
+
+
+}
+
+
+#card5{
+
+    position: absolute;
+    left: 300px;
+    bottom: 10px;
+    display: flex;
+    margin-bottom: -400px;
+    min-height: 50px;
+
+
+
+
+
+}
+
+
+#card7{
+
+    
+    position: absolute;
+    left: 900px;
+    bottom: 10px;
+    display: flex;
+    margin-bottom: -400px;
+    min-height: 50px;
+
+
+
+
+
+
+}
+
+
+#card8{
+
+    
+    position: absolute;
+    left: 1200px;
+    bottom: 10px;
+    display: flex;
+    margin-bottom: -400px;
+    min-height: 50px;
+
+
+
+
+
+
+}
+
+

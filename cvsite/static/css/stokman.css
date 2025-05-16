@@ -1,0 +1,15 @@
+html, body {
+    height: 100%;
+    margin: 0; /* Kenar boşluklarını sıfırla */
+    padding: 0;
+}
+
+body {
+    background-image: url("/static/images/background.png"); /* Resim dosyanın yolu */
+    background-size: cover; /* Sayfanın tamamını kaplasın */
+    background-position: center; /* Ortaya hizalasın */
+    background-repeat: no-repeat; /* Tekrar etmesin */
+}
+.container h1{
+    margin-top: 50px;
+}

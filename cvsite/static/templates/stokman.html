@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+  <link href="{% static 'css/stokman.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}
+  index
+{% endblock %}
+
+
+
+
+{% block content %}
+{% include "navbar.html" %}
+
+<div style="display: flex; flex-direction: row; gap: 20px; justify-content: flex-start; align-items: center; margin-left:20px">
+    <img src="{% static 'images/stokman1.png' %}" width="280px" alt="Proje Açıklama Alanı" />
+    <img src="{% static 'images/image.png' %}" width="280px" alt="Proje Açıklama Alanı" />
+    <img src="{% static 'images/stokman3.png' %}" width="280px" alt="Proje Açıklama Alanı" />
+    <img src="{% static 'images/stokman4.png' %}"    width="280px" alt="Proje Açıklama Alanı" />
+    <img src="{% static 'images/stokman6.png' %}" width="280px" alt="Proje Açıklama Alanı" />
+    
+   
+    
+</div>
+
+<div class="container">
+    <br>
+    <h1>Stok Yönetimi Projesi</h1>
+
+    <p>
+        Stok yönetimi projemde, öncelikle Django’yu tercih ettim çünkü Django'nun <span class="highlight">veritabanı yönetimi</span> (model yapıları) ve <span class="highlight">kolay veri yönetimi</span> sağlama özellikleri, projem için oldukça uygun oldu. İlk aşamada, HTML ve CSS ile temel bir site oluşturdum ve kullanıcı arayüzünü tasarladım. Django’nun güçlü veritabanı yönetim sistemi sayesinde, <span class="highlight">stok takibini kolayca entegre edebildim</span> ve verileri dinamik bir şekilde yönetmek mümkün oldu.
+    </p>
+
+    <p>
+        Projenin dinamikliğini artırmak için <span class="highlight">JavaScript</span> ile interaktif özellikler ekledim. JavaScript, kullanıcıların stok verileri üzerinde hızlı bir şekilde işlem yapabilmesini sağlayarak, siteye dinamik bir yapı kazandırdı.
+    </p>
+
+    <p>
+        Ayrıca, **ODBC** (Open Database Connectivity) kullanarak Django ile veritabanına bağlandım. Bu sayede, **veritabanı yönetimi** daha esnek hale geldi ve verileri **dış kaynaklı veritabanlarıyla** kolayca senkronize edebildim. ODBC bağlantısı, özellikle farklı platformlar arasında veri entegrasyonu sağlamak için önemli bir avantaj sundu.
+    </p>
+
+    <p>
+        Son olarak, projenin görselleştirme kısmına odaklandım. <span class="highlight">Aylık satış verilerini görselleştirmek</span> için <span class="highlight">Power BI</span> kullandım. Power BI'da oluşturduğum <span class="highlight">dashboard</span> sayesinde, stok takibini daha etkili bir şekilde yapabiliyor ve satış verilerini detaylı bir şekilde inceleyebiliyorum. Bu sayede, stok durumunu görsel olarak takip etmek, karar verme süreçlerinde büyük kolaylık sağladı.
+    </p>
+
+    <p>
+        Bu proje, stok yönetimi ve verilerin görselleştirilmesi açısından güçlü bir çözüm sundu ve kafemizdeki stok takibini daha verimli hale getirdi.
+    </p>
+</div>
+
+{% endblock %}
